@@ -1,0 +1,5 @@
+# Copier ce fichier sous le nom database.properties puis remplacer les valeurs.
+db.driver=org.postgresql.Driver
+db.url=jdbc:postgresql://localhost:5432/medecine
+db.username=aina
+db.password=maminiaina
