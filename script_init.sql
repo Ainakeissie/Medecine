@@ -1,0 +1,2 @@
+INSERT INTO role (role) VALUES  
+('PUBLIC'), ('MEDECIN'), ('PATIENT');

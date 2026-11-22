@@ -1,32 +1,42 @@
 package medecine.app.model;
 
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "role")
 public class Role {
-    @Column(nullable = false, length = 100)
-    private String login;
-    @Column(nullable = false, length = 100)
-    private String password;
-    
-    public String getLogin() {
-        return login;
+    @Id 
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column (nullable = false, length = 100)
+    private String role;
+    @OneToMany (mappedBy = "role")
+    private List<Utilisateur> utilisateurs;
+
+    public Long getId() {
+        return id;
     }
-    public void setLogin(String login) {
-        this.login = login;
+    public void setId(Long id) {
+        this.id = id;
     }
-    public String getPassword() {
-        return password;
+    public String getRole() {
+        return role;
     }
-    public void setPassword(String password) {
-        this.password = password;
+    public void setRole(String role) {
+        this.role = role;
+    }
+    public List<Utilisateur> getUtilisateurs() {
+        return utilisateurs;
+    }
+    public void setUtilisateurs(List<Utilisateur> utilisateurs) {
+        this.utilisateurs = utilisateurs;
     }
 }
