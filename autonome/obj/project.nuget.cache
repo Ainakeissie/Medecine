@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "05Oz1F7wcG0=",
+  "success": true,
+  "projectFilePath": "/home/aina/S5/INF305_CLUSTER/Medecine/autonome/autonome.csproj",
+  "expectedPackageFiles": [
+    "/home/aina/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "/home/aina/.nuget/packages/qrcoder/1.9.0/qrcoder.1.9.0.nupkg.sha512",
+    "/home/aina/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
